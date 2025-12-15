@@ -119,6 +119,43 @@
       color: #333;
       align-self: flex-start;
       border-bottom-left-radius: 4px;
+      position: relative;
+      padding-right: 40px;
+    }
+
+    .ai-support-speak-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+      opacity: 0.6;
+      transition: opacity 0.2s, background 0.2s;
+    }
+
+    .ai-support-speak-btn:hover {
+      opacity: 1;
+      background: rgba(0,0,0,0.05);
+    }
+
+    .ai-support-speak-btn.speaking {
+      opacity: 1;
+      animation: pulse 1s infinite;
+    }
+
+    .ai-support-speak-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: #666;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
     }
 
     .ai-support-message.typing {
@@ -243,6 +280,58 @@
   // Widget state
   let conversationHistory = [];
   let isLoading = false;
+  let currentSpeech = null;
+
+  // Text-to-Speech setup
+  const speechSynthesis = window.speechSynthesis;
+
+  function detectLanguage(text) {
+    // Simple detection: if text contains Cyrillic characters, it's likely Bulgarian
+    const cyrillicPattern = /[\u0400-\u04FF]/;
+    return cyrillicPattern.test(text) ? 'bg-BG' : 'en-US';
+  }
+
+  function speak(text, button) {
+    // Stop any ongoing speech
+    if (currentSpeech) {
+      speechSynthesis.cancel();
+      document.querySelectorAll('.ai-support-speak-btn').forEach(btn => {
+        btn.classList.remove('speaking');
+      });
+    }
+
+    // If clicking the same button while speaking, just stop
+    if (button.classList.contains('speaking')) {
+      button.classList.remove('speaking');
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    const lang = detectLanguage(text);
+    utterance.lang = lang;
+    utterance.rate = 0.9; // Slightly slower for clarity
+    utterance.pitch = 1.0;
+
+    // Get appropriate voice
+    const voices = speechSynthesis.getVoices();
+    const voice = voices.find(v => v.lang.startsWith(lang.split('-')[0])) || voices[0];
+    if (voice) utterance.voice = voice;
+
+    button.classList.add('speaking');
+    currentSpeech = utterance;
+
+    utterance.onend = () => {
+      button.classList.remove('speaking');
+      currentSpeech = null;
+    };
+
+    utterance.onerror = () => {
+      button.classList.remove('speaking');
+      currentSpeech = null;
+    };
+
+    speechSynthesis.speak(utterance);
+  }
 
   // Initialize widget functionality
   function initWidget() {
@@ -317,7 +406,22 @@
     function addMessage(text, sender) {
       const msg = document.createElement('div');
       msg.className = `ai-support-message ${sender}`;
-      msg.textContent = text;
+
+      // Add text content
+      const textSpan = document.createElement('span');
+      textSpan.textContent = text;
+      msg.appendChild(textSpan);
+
+      // Add speaker button for assistant messages
+      if (sender === 'assistant') {
+        const speakBtn = document.createElement('button');
+        speakBtn.className = 'ai-support-speak-btn';
+        speakBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>';
+        speakBtn.title = 'Read aloud';
+        speakBtn.addEventListener('click', () => speak(text, speakBtn));
+        msg.appendChild(speakBtn);
+      }
+
       messages.appendChild(msg);
       messages.scrollTop = messages.scrollHeight;
     }

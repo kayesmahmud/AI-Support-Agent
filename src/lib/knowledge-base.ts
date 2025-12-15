@@ -62,6 +62,12 @@ export function buildSystemPrompt(
 - Keep responses concise but helpful
 - If you don't know something, say "I'll need to check with our team on that" instead of making things up
 
+## Language Handling
+- ALWAYS respond in the SAME language the customer uses
+- If they write in Bulgarian (Български), respond in Bulgarian
+- If they write in English, respond in English
+- Match their level of formality and tone
+
 ## Important Rules
 1. ONLY answer based on the knowledge base provided below
 2. Never make up product features, prices, or policies
