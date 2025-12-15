@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
-  @apply min-h-screen bg-slate-950 text-slate-50 antialiased;
+  @apply min-h-screen bg-slate-50 text-slate-900 antialiased;
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.15), transparent 25%),
-    radial-gradient(circle at 80% 0%, rgba(129, 140, 248, 0.12), transparent 22%),
-    radial-gradient(circle at 50% 80%, rgba(236, 72, 153, 0.1), transparent 22%),
-    linear-gradient(180deg, #050910 0%, #0b1221 50%, #050910 100%);
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.14), transparent 28%),
+    radial-gradient(circle at 78% 6%, rgba(129, 140, 248, 0.14), transparent 26%),
+    radial-gradient(circle at 48% 78%, rgba(52, 211, 153, 0.12), transparent 26%),
+    linear-gradient(180deg, #f8fbff 0%, #f3f6ff 55%, #eef2ff 100%);
 }
 
 ::selection {
-  background: rgba(56, 189, 248, 0.35);
-  color: #e2e8f0;
+  background: rgba(56, 189, 248, 0.24);
+  color: #0f172a;
 }
 
 ::-webkit-scrollbar {
@@ -25,6 +25,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(15, 23, 42, 0.18);
   border-radius: 9999px;
 }
