@@ -1,5 +1,4 @@
 import OpenAI from 'openai';
-import Anthropic from '@anthropic-ai/sdk';
 
 // Initialize DeepSeek client (OpenAI-compatible)
 const deepseek = new OpenAI({
@@ -12,14 +11,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-// Initialize Claude (Anthropic) client
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
-
 export const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
 export const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-4o-mini';
-export const CLAUDE_MODEL = process.env.CLAUDE_MODEL || 'claude-sonnet-4-20250514';
 
 export interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -28,7 +21,7 @@ export interface ChatMessage {
 
 export interface ChatResponse {
   message: string;
-  provider: 'deepseek' | 'openai' | 'claude';
+  provider: 'deepseek' | 'openai';
   usage?: {
     promptTokens: number;
     completionTokens: number;
@@ -37,7 +30,7 @@ export interface ChatResponse {
 }
 
 /**
- * Try DeepSeek first, then OpenAI, then Claude as fallbacks
+ * Try DeepSeek first, then OpenAI as fallback
  */
 export async function generateChatResponse(
   messages: ChatMessage[],
@@ -101,39 +94,8 @@ export async function generateChatResponse(
           : undefined,
       };
     } catch (openaiError) {
-      console.log('❌ OpenAI also failed:', (openaiError as Error).message);
-      console.log('🟣 Falling back to Claude...');
-
-      // Final fallback to Claude
-      try {
-        const response = await anthropic.messages.create({
-          model: CLAUDE_MODEL,
-          max_tokens: 1000,
-          system: systemPrompt,
-          messages: messages.map(msg => ({
-            role: msg.role === 'system' ? 'user' : msg.role,
-            content: msg.content,
-          })),
-        });
-
-        const assistantMessage = response.content[0].type === 'text'
-          ? response.content[0].text
-          : '';
-
-        console.log('✅ Claude succeeded');
-        return {
-          message: assistantMessage,
-          provider: 'claude',
-          usage: {
-            promptTokens: response.usage.input_tokens,
-            completionTokens: response.usage.output_tokens,
-            totalTokens: response.usage.input_tokens + response.usage.output_tokens,
-          },
-        };
-      } catch (claudeError) {
-        console.log('❌ All APIs failed');
-        throw new Error('All AI providers (DeepSeek, OpenAI, Claude) failed. Please try again later.');
-      }
+      console.log('❌ Both DeepSeek and OpenAI failed');
+      throw new Error('Both AI providers (DeepSeek and OpenAI) failed. Please try again later.');
     }
   }
 }

@@ -11,7 +11,6 @@
     "scrape": "ts-node scripts/scrape-website.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.32.1",
     "cheerio": "^1.1.2",
     "next": "^14.2.0",
     "openai": "^4.52.0",
