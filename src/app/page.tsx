@@ -13,7 +13,46 @@ export default function TestPage() {
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [speakingIndex, setSpeakingIndex] = useState<number | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Text-to-Speech functions
+  const detectLanguage = (text: string): string => {
+    const cyrillicPattern = /[\u0400-\u04FF]/;
+    return cyrillicPattern.test(text) ? 'bg-BG' : 'en-US';
+  };
+
+  const speak = (text: string, index: number) => {
+    const synth = window.speechSynthesis;
+
+    // Stop if already speaking this message
+    if (speakingIndex === index) {
+      synth.cancel();
+      setSpeakingIndex(null);
+      return;
+    }
+
+    // Stop any ongoing speech
+    synth.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    const lang = detectLanguage(text);
+    utterance.lang = lang;
+    utterance.rate = 0.9;
+    utterance.pitch = 1.0;
+
+    // Get appropriate voice
+    const voices = synth.getVoices();
+    const voice = voices.find(v => v.lang.startsWith(lang.split('-')[0])) || voices[0];
+    if (voice) utterance.voice = voice;
+
+    setSpeakingIndex(index);
+
+    utterance.onend = () => setSpeakingIndex(null);
+    utterance.onerror = () => setSpeakingIndex(null);
+
+    synth.speak(utterance);
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -79,9 +118,24 @@ export default function TestPage() {
               style={{
                 ...messageStyle,
                 ...(msg.role === 'user' ? userMessageStyle : botMessageStyle),
+                position: 'relative',
+                paddingRight: msg.role === 'assistant' ? '45px' : '14px',
               }}
             >
-              {msg.content}
+              <span>{msg.content}</span>
+              {msg.role === 'assistant' && (
+                <button
+                  onClick={() => speak(msg.content, i)}
+                  style={{
+                    ...speakerButtonStyle,
+                    opacity: speakingIndex === i ? 1 : 0.6,
+                    animation: speakingIndex === i ? 'pulse 1s infinite' : 'none',
+                  }}
+                  title="Read aloud"
+                >
+                  🔊
+                </button>
+              )}
             </div>
           ))}
           {isLoading && (
@@ -225,4 +279,18 @@ const codeStyle: React.CSSProperties = {
   borderRadius: '6px',
   overflow: 'auto',
   fontSize: '13px',
+};
+
+const speakerButtonStyle: React.CSSProperties = {
+  position: 'absolute',
+  right: '8px',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  background: 'none',
+  border: 'none',
+  cursor: 'pointer',
+  fontSize: '16px',
+  padding: '4px',
+  borderRadius: '4px',
+  transition: 'opacity 0.2s, background 0.2s',
 };

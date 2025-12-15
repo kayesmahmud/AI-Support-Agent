@@ -31,6 +31,16 @@ const PAGES_TO_SCRAPE: PageToScrape[] = [
     filename: 'company-about-bg.md',
     language: 'bg',
   },
+  {
+    url: 'https://bulgariawantsyou.com/en/faq',
+    filename: 'faq-en.md',
+    language: 'en',
+  },
+  {
+    url: 'https://bulgariawantsyou.com/bg/faq',
+    filename: 'faq-bg.md',
+    language: 'bg',
+  },
 ];
 
 /**
