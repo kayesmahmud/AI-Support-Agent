@@ -158,6 +158,10 @@ export default function TestPage() {
       </div>
 
       <main className="relative mx-auto flex min-h-screen max-w-4xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
+        <div className="space-y-4 text-center sm:text-left">
+          <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">AI Support Agent</h1>
+        </div>
+
         <div className="mx-auto w-full">
           <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 shadow-2xl backdrop-blur-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-100/40 via-white/0 to-emerald-100/30" />
