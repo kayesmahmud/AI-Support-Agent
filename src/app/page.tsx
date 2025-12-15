@@ -14,7 +14,9 @@ export default function TestPage() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [speakingIndex, setSpeakingIndex] = useState<number | null>(null);
+  const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const recognitionRef = useRef<any>(null);
 
   // Text-to-Speech functions
   const detectLanguage = (text: string): string => {
@@ -61,6 +63,52 @@ export default function TestPage() {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // Speech-to-Text (Voice Input)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        // Support both Bulgarian and English
+        recognition.lang = 'bg-BG'; // Default to Bulgarian, will auto-detect
+
+        recognition.onresult = (event: any) => {
+          const transcript = event.results[0][0].transcript;
+          setInput(transcript);
+          setIsListening(false);
+        };
+
+        recognition.onerror = () => {
+          setIsListening(false);
+        };
+
+        recognition.onend = () => {
+          setIsListening(false);
+        };
+
+        recognitionRef.current = recognition;
+      }
+    }
+  }, []);
+
+  const toggleVoiceInput = () => {
+    if (!recognitionRef.current) {
+      alert('Voice input not supported in your browser');
+      return;
+    }
+
+    if (isListening) {
+      recognitionRef.current.stop();
+      setIsListening(false);
+    } else {
+      recognitionRef.current.start();
+      setIsListening(true);
+    }
+  };
 
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
@@ -152,10 +200,20 @@ export default function TestPage() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
-            placeholder="Type your message..."
+            placeholder={isListening ? 'Listening...' : 'Type or speak your message...'}
             style={inputStyle}
             disabled={isLoading}
           />
+          <button
+            onClick={toggleVoiceInput}
+            style={{
+              ...micButtonStyle,
+              background: isListening ? '#dc3545' : '#6c757d',
+            }}
+            title={isListening ? 'Stop listening' : 'Voice input'}
+          >
+            {isListening ? '⏹' : '🎤'}
+          </button>
           <button
             onClick={sendMessage}
             disabled={isLoading || !input.trim()}
@@ -293,4 +351,14 @@ const speakerButtonStyle: React.CSSProperties = {
   padding: '4px',
   borderRadius: '4px',
   transition: 'opacity 0.2s, background 0.2s',
+};
+
+const micButtonStyle: React.CSSProperties = {
+  padding: '10px 15px',
+  color: 'white',
+  border: 'none',
+  borderRadius: '20px',
+  cursor: 'pointer',
+  fontSize: '16px',
+  transition: 'background 0.2s',
 };
