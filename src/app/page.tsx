@@ -253,7 +253,7 @@ export default function TestPage() {
                         <span className="h-2.5 w-2.5 animate-bounce rounded-full bg-slate-400/90 [animation-delay:0.12s]" />
                         <span className="h-2.5 w-2.5 animate-bounce rounded-full bg-slate-400/90 [animation-delay:0.24s]" />
                       </div>
-                      <span>Thinking...</span>
+                      <span>Typing...</span>
                     </div>
                   </div>
                 )}
