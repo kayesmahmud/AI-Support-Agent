@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Widget Demo - Bulgaria Wants You</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 25px 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .feature-desc {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .instructions {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .instructions p {
+            color: #856404;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .instructions strong {
+            color: #664d03;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🇧🇬</div>
+        <h1>Bulgaria Wants You</h1>
+        <p class="subtitle">AI Support Agent Demo</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <div class="feature-title">Smart Chat</div>
+                <div class="feature-desc">AI-powered responses about Bulgaria Wants You</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎤</div>
+                <div class="feature-title">Voice Input</div>
+                <div class="feature-desc">Speak your questions naturally</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔊</div>
+                <div class="feature-title">Text-to-Speech</div>
+                <div class="feature-desc">Listen to AI responses</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌍</div>
+                <div class="feature-title">Bilingual</div>
+                <div class="feature-desc">English & Bulgarian support</div>
+            </div>
+        </div>
+
+        <button class="cta" onclick="openChat()">
+            💬 Open Chat Widget
+        </button>
+
+        <div class="instructions">
+            <h3>👉 Look for the chat bubble!</h3>
+            <p>The AI Support Widget appears in the <strong>bottom-right corner</strong> of this page.</p>
+            <p><strong>Try asking:</strong></p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>"Who are the founders?"</li>
+                <li>"What is your email address?"</li>
+                <li>"Кои са основателите?" (Bulgarian)</li>
+                <li>"Как мога да се свържа с вас?" (Bulgarian)</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Powered by <a href="https://deepseek.com" target="_blank">DeepSeek AI</a> & <a href="https://vercel.com" target="_blank">Vercel</a></p>
+            <p style="margin-top: 10px;">
+                <a href="https://bulgariawantsyou.com" target="_blank">🌐 Visit Bulgaria Wants You</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Configure Widget -->
+    <script>
+        // Set API URL before loading widget
+        window.AI_SUPPORT_API_URL = 'https://ai-support-agent.vercel.app';
+        window.AI_SUPPORT_TITLE = 'Bulgaria Wants You';
+        window.AI_SUPPORT_GREETING = 'Hi! How can I help you today? / Здравей! Как мога да ти помогна?';
+    </script>
+
+    <!-- AI Support Widget -->
+    <script src="https://ai-support-agent.vercel.app/widget.js"></script>
+
+    <script>
+        function openChat() {
+            // Click the chat widget toggle button
+            const toggleButton = document.getElementById('ai-support-toggle');
+            if (toggleButton) {
+                toggleButton.click();
+            } else {
+                alert('Widget is loading... Please wait a moment and try again.');
+            }
+        }
+    </script>
+</body>
+</html>

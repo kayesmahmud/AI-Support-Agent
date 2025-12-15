@@ -101,8 +101,13 @@
 
             <div class="code-block">
                 <button class="copy-btn" onclick="copyCode('embed-code')">Copy</button>
-                <code id="embed-code">&lt;!-- AI Support Widget --&gt;
-&lt;script src="<span id="widget-url"></span>/widget.js"&gt;&lt;/script&gt;</code>
+                <code id="embed-code">&lt;!-- Configure Widget --&gt;
+&lt;script&gt;
+  window.AI_SUPPORT_API_URL = '<span id="widget-url"></span>';
+&lt;/script&gt;
+
+&lt;!-- AI Support Widget --&gt;
+&lt;script src="<span class="widget-url-embed"></span>/widget.js"&gt;&lt;/script&gt;</code>
             </div>
         </div>
 
@@ -146,6 +151,11 @@
     &lt;!-- Your website content --&gt;
     &lt;h1&gt;Welcome to My Site&lt;/h1&gt;
 
+    &lt;!-- Configure Widget --&gt;
+    &lt;script&gt;
+      window.AI_SUPPORT_API_URL = '<span class="widget-url-full"></span>';
+    &lt;/script&gt;
+
     &lt;!-- AI Support Widget --&gt;
     &lt;script src="<span class="widget-url-full"></span>/widget.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
@@ -171,6 +181,9 @@
         // Update all URLs with current domain
         document.getElementById('widget-url').textContent = currentDomain;
         document.querySelectorAll('.widget-url-full').forEach(el => {
+            el.textContent = currentDomain;
+        });
+        document.querySelectorAll('.widget-url-embed').forEach(el => {
             el.textContent = currentDomain;
         });
         document.getElementById('test-link').href = currentDomain;
