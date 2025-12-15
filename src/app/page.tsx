@@ -7,11 +7,6 @@ interface Message {
   content: string;
 }
 
-const promptSuggestions = [
-  'What does your refund policy look like?',
-  'How do I embed this widget on my site?',
-  'Can you summarize onboarding steps?',
-];
 
 export default function TestPage() {
   const [messages, setMessages] = useState<Message[]>([
@@ -162,53 +157,13 @@ export default function TestPage() {
         <div className="absolute left-1/2 top-1/4 h-64 w-64 -translate-x-1/2 rounded-full bg-sky-100/80 blur-3xl" />
       </div>
 
-      <main className="relative mx-auto flex min-h-screen max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
-        <div className="space-y-4 text-center sm:text-left">
-          <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs uppercase tracking-[0.3em] text-cyan-700 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            Live preview
-          </span>
-          <div className="space-y-2">
-            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">AI Support Agent</h1>
-            <p className="text-lg text-slate-600 sm:max-w-3xl">
-              Test your brand-trained assistant with a fresh Tailwind look, voice input, and text-to-speech replies.
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3 text-xs text-slate-600 sm:justify-start">
-            <span className="rounded-full border border-slate-200 bg-white px-3 py-1 shadow-sm">Glassmorphism UI</span>
-            <span className="rounded-full border border-slate-200 bg-white px-3 py-1 shadow-sm">Voice + TTS ready</span>
-            <span className="rounded-full border border-slate-200 bg-white px-3 py-1 shadow-sm">Tailwind CSS</span>
-          </div>
-        </div>
-
-        <div className="grid items-start gap-6 lg:grid-cols-[1.6fr,1fr]">
+      <main className="relative mx-auto flex min-h-screen max-w-4xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full">
           <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 shadow-2xl backdrop-blur-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-100/40 via-white/0 to-emerald-100/30" />
-            <div className="relative flex items-center justify-between border-b border-slate-200/80 px-6 py-4">
-              <div className="space-y-1">
-                <p className="text-sm font-medium uppercase tracking-wide text-slate-800">Conversation</p>
-                <p className="text-sm text-slate-500">Real-time preview with voice controls</p>
-              </div>
-              <div className="flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs text-emerald-700">
-                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                Online
-              </div>
-            </div>
 
             <div className="relative space-y-5 p-4 sm:p-6">
-              <div className="flex flex-wrap gap-2">
-                {promptSuggestions.map((prompt) => (
-                  <button
-                    key={prompt}
-                    onClick={() => setInput(prompt)}
-                    className="group rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-700 shadow-sm transition hover:border-cyan-400 hover:text-slate-900 hover:shadow-[0_15px_50px_rgba(14,165,233,0.22)]"
-                  >
-                    <span className="text-cyan-600 group-hover:text-cyan-700">↳</span> {prompt}
-                  </button>
-                ))}
-              </div>
-
-              <div className="h-[440px] space-y-3 overflow-y-auto pr-1">
+              <div className="h-[540px] space-y-3 overflow-y-auto pr-1">
                 {messages.map((msg, i) => {
                   const isUser = msg.role === 'user';
                   return (
@@ -297,50 +252,6 @@ export default function TestPage() {
               </div>
             </div>
           </section>
-
-          <aside className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-2xl backdrop-blur-xl">
-            <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-gradient-to-bl from-cyan-200/50 to-emerald-200/0 blur-3xl" />
-            <div className="relative space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-emerald-400 text-lg text-white shadow-lg shadow-cyan-400/30">
-                  🚀
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">Embed it anywhere</p>
-                  <p className="text-sm text-slate-600">Drop one script tag into your site</p>
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-inner shadow-slate-200/80">
-                <p className="text-sm text-slate-700">
-                  Add this snippet to your site after deploying (swap in your Vercel URL):
-                </p>
-                <pre className="mt-3 overflow-auto rounded-xl bg-slate-900/80 p-4 text-xs leading-relaxed text-cyan-50">
-{`<script>
-  window.AI_SUPPORT_API_URL = 'https://YOUR_VERCEL_URL';
-  window.AI_SUPPORT_TITLE = 'Support';
-  window.AI_SUPPORT_COLOR = '#22d3ee';
-</script>
-<script src="https://YOUR_VERCEL_URL/widget.js"></script>`}
-                </pre>
-              </div>
-
-              <div className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700 shadow-sm">
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                  Voice input and read-aloud are enabled.
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-cyan-500" />
-                  Gradient chat bubbles + glass UI for modern feel.
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-fuchsia-500" />
-                  Responsive layout ready for embedding previews.
-                </div>
-              </div>
-            </div>
-          </aside>
         </div>
       </main>
     </div>
