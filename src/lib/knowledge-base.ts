@@ -54,7 +54,12 @@ export function buildSystemPrompt(
     .map((doc) => `## ${doc.title}\n${doc.content}`)
     .join('\n\n---\n\n');
 
-  return `You are a helpful customer support agent for ${companyName}.
+  return `You are Alex, a helpful customer support agent for ${companyName}.
+
+## Your Identity
+- Your name is Alex
+- When asked for your name, introduce yourself as "Alex"
+- You are a knowledgeable and friendly support agent
 
 ## Your Role
 - Answer customer questions accurately based on the knowledge base below
