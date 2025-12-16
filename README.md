@@ -7,7 +7,9 @@ An AI-powered support agent trained on your company's knowledge base and chat st
 - **Custom Knowledge Base**: Train the AI on your FAQs, policies, and product docs
 - **Chat Style Learning**: Teach the AI your team's communication style
 - **Embeddable Widget**: Add to any website with a simple script tag
-- **Modern Stack**: Next.js 14, TypeScript, OpenAI GPT-4
+- **Real-Time Voice Calls**: Let customers call and talk to AI (powered by Ultravox)
+- **Bilingual Support**: English and Bulgarian with automatic language detection
+- **Modern Stack**: Next.js 14, TypeScript, OpenAI GPT-4, Ultravox Voice AI
 
 ## Quick Start
 
@@ -25,13 +27,22 @@ Create a `.env.local` file:
 cp .env.example .env.local
 ```
 
-Edit `.env.local` and add your OpenAI API key:
+Edit `.env.local` and add your API keys:
 
 ```
+# Required for text chat
 OPENAI_API_KEY=sk-proj-your-api-key-here
 COMPANY_NAME=Your Company Name
 OPENAI_MODEL=gpt-4o-mini
+
+# Optional: For voice calling (30 free minutes!)
+ULTRAVOX_API_KEY=your-ultravox-api-key-here
 ```
+
+**Get Ultravox API Key:**
+1. Sign up at https://app.ultravox.ai (free account)
+2. Go to Settings → API Keys
+3. Create new key and add to `.env.local`
 
 ### 3. Add Your Knowledge Base
 
@@ -49,6 +60,21 @@ npm run dev
 ```
 
 Open http://localhost:3000 to test the chat.
+
+### 5. Test Voice Calling (Optional)
+
+If you added `ULTRAVOX_API_KEY`, test voice calls:
+
+```bash
+# Open the voice test page
+open http://localhost:3000/voice-test
+```
+
+Or visit http://localhost:3000/voice-test in your browser:
+- Click "Start Voice Call"
+- Allow microphone access
+- Talk to your AI support agent in real-time!
+- Supports both English and Bulgarian
 
 ## Deploy to Vercel
 
@@ -121,19 +147,24 @@ Agent: Hello! I'd be happy to help. What's your order number?
 ├── src/
 │   ├── app/
 │   │   ├── api/
-│   │   │   └── chat/
-│   │   │       └── route.ts    # Chat API endpoint
+│   │   │   ├── chat/
+│   │   │   │   └── route.ts         # Chat API endpoint
+│   │   │   └── voice/
+│   │   │       └── create-call/
+│   │   │           └── route.ts     # Voice call API
+│   │   ├── voice-test/
+│   │   │   └── page.tsx             # Voice test page
 │   │   ├── layout.tsx
-│   │   └── page.tsx            # Test page
+│   │   └── page.tsx                 # Chat test page
 │   └── lib/
-│       ├── openai.ts           # OpenAI client
-│       └── knowledge-base.ts   # KB loader
+│       ├── openai.ts                # OpenAI client
+│       └── knowledge-base.ts        # KB loader
 ├── public/
-│   └── widget.js               # Embeddable chat widget
-├── knowledge-base/             # Your training docs
+│   └── widget.js                    # Embeddable chat widget
+├── knowledge-base/                  # Your training docs
 ├── scripts/
 │   └── prepare-knowledge-base.ts
-└── vercel.json                 # Deployment config
+└── vercel.json                      # Deployment config
 ```
 
 ## Customization
@@ -160,12 +191,18 @@ Edit `src/lib/knowledge-base.ts` and modify the `buildSystemPrompt` function.
 
 ## Cost Estimation
 
-Using GPT-4o-mini (default):
+### Text Chat (GPT-4o-mini)
 - ~$0.15 per 1M input tokens
 - ~$0.60 per 1M output tokens
 - Typical conversation (10 messages): ~$0.001-0.002
+- **1000 conversations/month: ~$1-5/month**
 
-For 1000 support conversations/month: **~$1-5/month**
+### Voice Calls (Ultravox)
+- **$0.05 per minute** (1/3 the cost of OpenAI Realtime)
+- **30 free minutes** to start
+- 5-minute call: $0.25
+- **100 calls/month (5 min avg): ~$25/month**
+- Still cheaper than human agents at $15/hour!
 
 ## Support
 
