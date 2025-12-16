@@ -1,71 +1,135 @@
-# About Bulgaria Wants You (English)
+# Frequently Asked Questions (FAQ)
 
-> Source: https://bulgariawantsyou.com/en/faq
-> Scraped: 2025-12-15
+## General Questions
 
-# Frequently Asked Questions
+### Q: What services does ELW Group provide?
 
-Registration gives you access to the full functionality of the platform:
+A: ELW Group specializes in comprehensive manpower solutions, including:
+- Recruitment services
+- Vocational training programs
+- Visa assistance
+- Pre-departure orientation
+- Travel arrangements for job seekers
+- Ongoing support for employers and employees
 
-Register for Bulgaria Wants You events in Bulgaria and abroad with a single click – completely free of charge.
+### Q: Is ELW Group a licensed recruitment agency?
 
-Click the Register button and follow the steps – enter your email and password, then confirm the password by typing it again. You can also register with your Google or Facebook account. You will receive an email with a confirmation link – click it to verify your email address. After that, complete your profile by adding information about your education, experience, and professional field. In your profile, you can upload your CV, diplomas, and certificates – and optionally, a photo.
+A: Yes, ELW Group is duly licensed and accredited by the relevant government authorities in Nepal for recruitment services. We maintain the highest standards in compliance and governance.
 
-Complete your profile as fully as possible – include education, professional experience, interests, and preferred city to live and work in. This will increase your chances of being noticed by employers and invited to apply for roles that match your criteria.
+### Q: What industries does ELW Group specialize in for recruitment?
 
-The more complete your profile, the more accurate the job suggestions you’ll receive - and the faster you’ll find the right opportunity.All information is used solely for the purpose of connecting you with employers seeking your profile.
+A: ELW Group serves a wide range of industries, including:
+- Construction
+- Hospitality
+- Healthcare
+- Engineering
+- Oil and Gas
+- Information Technology
+- Culinary services
+- Skilled trades
+- Technical positions
+- Executive and leadership roles
 
-Your data is processed in accordance with applicable legislation and is not shared with third parties outside the platform’s purposes.
+### Q: Who is the founder of ELW Group?
 
-Read more in our Terms and conditions of use of the Bulgaria Wants You website by Users (“Talents”) и Privacy policy of the Bulgaria Wants You website.
+A: ELW Group was founded by **PB Shahi**, a visionary leader in the manpower recruitment industry. Under his leadership, ELW Group has grown from a local recruitment agency to a globally recognized manpower solutions provider over the past 20+ years, successfully placing over 11,000 workers worldwide and serving 421+ international clients.
 
-Make sure your profile is complete (we recommend filling in even the optional fields) and visible to employers.Add a CV (preferably in Bulgarian and/or English), relevant diplomas, and certificates – this will rank your profile higher in the list of potential candidates for a given position.
+## For Employers
 
-Yes. The platform allows direct contact or chat with employers. You can ask questions or express interest even before submitting your application.Still, don’t forget to apply formally once you’ve confirmed that the role fits your background – it shows genuine interest to the employer.
+### Q: How can my company partner with ELW Group for recruitment needs?
 
-You can browse all job listings in the Careers → Job offers section, whether or not you’re registered.
+A: Simply reach out to us with your staffing requirements, and our team will work closely with you to understand your needs and provide tailored manpower solutions. Contact us through:
+- Phone: +977-15921222 or +977 9851369333
+- Email: [email protected]
+- Website contact form
 
-Use the filters by field, location, professional area, or company to find suitable roles and apply directly through the platform.
+### Q: Does ELW Group provide ongoing support after recruitment?
 
-Leading companies from various sectors post their openings, including:Finance, Law & Business Services; IT & Telecommunications; Sales, Marketing & Customer Service; Engineering, Manufacturing & Energy; Creative Industries, Media & Education; Administration, Logistics & Services.
+A: Yes, we offer continued support to both employers and employees throughout the recruitment process and beyond. Our commitment extends past placement to ensure long-term success.
 
-Experience levels range from entry-level roles to senior expert and management positions, with a strong focus on expert and mid-management opportunities.
+### Q: What makes ELW Group different from other recruitment agencies?
 
-In the Events → Upcoming Events section, you’ll find all scheduled forums and gatherings.Select the event you wish to attend and reserve your spot by logging into your profile on the platform.
+A: Our key differentiators include:
+- Over 20 years of experience
+- 11,000+ workers placed internationally
+- Government-approved and licensed
+- 515+ HR consultants in our network
+- Proven track record with 421+ clients worldwide
+- Ethical practices and transparency
+- Comprehensive end-to-end solutions
 
-A completed user profile (with all mandatory fields) is required to register. This helps both us and our employer partners understand the visitor profiles – by profession, education, and more.Based on this anonymized data, we prepare more relevant content and experiences for event attendees.
+## For Job Seekers
 
-Once registered, you will receive an email confirmation and a link to access your QR code for entry. You’ll also receive a reminder and additional event information before the date.
+### Q: How can I apply for jobs through ELW Group?
 
-No. Bulgaria Wants You events are free of charge for all visitors, but advance registration via your user profile is required.
+A: You can:
+- Browse job openings listed on our website (elwgroup.com.np)
+- Submit your resume directly to our team for consideration
+- Contact our office during business hours
+- WhatsApp us at +977 9851369333
 
-For details, see: “How do I register for a Bulgaria Wants You event?”
+### Q: What training programs does ELW Group offer?
 
-Bulgaria Wants You is a national platform designed to connect Bulgarians living abroad and at home with career and lifestyle opportunities in Bulgaria.
+A: We provide customized training programs to enhance the skills and capabilities of job seekers, including:
+- Language proficiency training
+- Technical skills development
+- Job readiness programs
+- Industry-specific training
+- Practical skill development
 
-It showcases companies, job openings, and information about Bulgarian cities – helping users make informed decisions about where to live and work.
+### Q: Does ELW Group assist with visa and travel arrangements?
 
-Bulgaria Wants You is more than a job board – it shows what real life looks like across Bulgarian cities, presents employers as part of a larger community, and organises events where you can meet them in person. Its mission is to inspire more people to find their place in Bulgaria.
+A: Yes, we offer comprehensive support for visa processing and travel arrangements for job seekers relocating for employment. This is part of our complete end-to-end service.
 
-All personal data is processed in compliance with GDPR requirements. You can find all the details about how we process users' personal data on the Privacy Policy webpage.
+## Contact and Communication
 
-We use secure (SSL) connections and do not share your information with third parties without your consent.
+### Q: How can I contact ELW Group for inquiries?
 
-All terms and conditions for using the site can be found at Terms and conditions.
+A: You can reach us through:
+- **Phone:** +977-15921222, +977 9851369333
+- **Email:** [email protected]
+- **WhatsApp:** +977 9851369333
+- **Office Hours:**
+  - Monday to Friday: 10:00 AM - 6:00 PM
+  - Saturday to Sunday: 10:00 AM - 2:00 PM
+- **Address:** Tokha 10, Basundhara, Kathmandu, Nepal
+- **Website:** Contact page or inquiry form
 
-Можеш да ни намериш на:📍 Sofia 1164, 22 Galichitsa St. 📞 +359 877 496 777 ✉️ [email protected]
+Our team is available to assist with any questions and concerns.
 
-In the Career → For Employers and Events → For Employers sections, you’ll find detailed information about our partnership packages, terms, and contact options with our sales team.
+## Recruitment Process
 
-After creating a company profile (with our team’s assistance), employers can post job ads, showcase their company with videos and visuals, and reach candidates in Bulgaria and abroad.
+### Q: What is ELW Group's recruitment process?
 
-Yes. The Bulgaria Wants You team develops custom partnership packages for employers, institutions, and media partners.
+A: Our 8-step process ensures quality and compliance:
+1. Requirement Receipt - Understanding client needs
+2. Candidate Search - Sourcing qualified candidates
+3. Interviews - Comprehensive assessment
+4. Medical Examination - Health screening
+5. Visa Processing - Documentation assistance
+6. Application Screening - Final verification
+7. Immigration Completion - Travel documentation
+8. Orientation and Departure - Pre-departure support
 
-For more information, contact [email protected]. We’ll be happy to answer your questions and discuss collaboration opportunities.
+### Q: How long does the recruitment process typically take?
 
-- Create a personal profile with key elements such as your education level, professional field and experience level, preferred cities to live and work in, and more;
-- Upload documents to your profile – CV, diplomas, and certificates;
-- Subscribe to job alerts based on your selected criteria and receive new opportunities directly by email;
-- Apply for job openings directly through the platform;
-- Be visible to employers looking for professionals like you;
-- Message companies directly about an open position that interests you, even before applying;
+A: The timeline varies based on destination country, visa requirements, and position complexity. Our team will provide you with a detailed timeline specific to your situation during the initial consultation.
+
+### Q: Does ELW Group charge fees to job seekers?
+
+A: Please contact our office directly for detailed information about our fee structure and payment terms. We maintain transparency in all our dealings.
+
+## Geographic Coverage
+
+### Q: Which countries does ELW Group recruit for?
+
+A: We provide recruitment services globally, with particular expertise in:
+- Middle East countries
+- European nations
+- And many other destinations worldwide
+
+We always provide complete solutions focused on any business in any country.
+
+### Q: Can ELW Group help with relocation support?
+
+A: Yes, our comprehensive services include visa processing, travel arrangements, pre-departure orientation, and ongoing support to help you settle in your new location successfully.

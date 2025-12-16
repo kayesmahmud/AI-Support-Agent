@@ -1,81 +1,64 @@
-# About Bulgaria Wants You (English)
+# About ELW Group
 
-> Source: https://bulgariawantsyou.com/en/about
-> Scraped: 2025-12-15
+## Company Overview
 
-# About us
+ELW Group is a trusted manpower solutions provider operating from Nepal with over 20 years of experience in human resource management. We are a government-approved recruitment agency with an extensive network across diverse industries worldwide.
 
+## Our Founder
 
-## Bulgaria Wants You is a private initiative created as a tool to combat the demographic crisis.
+**PB Shahi** - Founder & Visionary Leader
 
+Under the leadership of our founder PB Shahi, ELW Group has grown from a local recruitment agency to a globally recognized manpower solutions provider. With a vision to empower lives and build futures, PB Shahi has guided the company through two decades of excellence in human resource management, successfully placing over 11,000 workers worldwide and earning the trust of 421+ international clients.
 
-### 5 Години Bulgaria Wants You
+## Our Mission
 
+**"Empowering Lives, Building Futures"**
 
-### 5 Years Bulgaria Wants You
+We are committed to excellence and professionalism, transforming lives through global opportunities. Our focus is on delivering exceptional service and building long-term relationships with both employers and job seekers.
 
+## Core Values
 
-### Join the cause!
+### Expertise
+Years of industry knowledge tailored to specific needs, ensuring we understand the unique requirements of each sector we serve.
 
+### Reliability
+Proven commitment to delivering on promises. We have a proven history of providing top-notch workforce solutions with reliability throughout the entire process.
 
-### Contacts
+### Compliance
+As a government-approved agency, we adhere strictly to all regulations and maintain the highest standards in compliance and governance.
 
+### Integrity
+We are dedicated to ethical practices and transparency, earning trust through integrity in everything we do.
 
-### Social media channels
+## Our Track Record
 
-With the help of our partners from various companies, municipalities, and institutions, we are pursuing our mission to bring Bulgarians back from abroad, retain those who are still here, and show why it is worth living and building a career in Bulgaria.
+- **11,000+ workers** sent abroad
+- **515+ HR consultants** in our network
+- **11 awards** won for excellence
+- **421+ clients** worldwide across diverse industries
 
-We are a new generation employer branding media platform and, through rich video and media content, we present the leading employers on the Bulgarian market. We provide detailed information about the standard of living, the environment, the lifestyle, and job vacancies in different regions of the country.
+## What We Stand For
 
-Платформата “Bulgaria Wants You” е плод на усилени проучвания, анализи и съвети от различни експерти как да бъдем максимално полезни за българските емигранти, така че да вземат информирано решение за евентуалното си прибиране в България. Ние сме с ясното съзнание, че в 21-ви век хората са достатъчно свободни и мобилни, за да пробват различни варианти за своето бъдеще. И все пак вярваме, че няма място, на което да си по-щастлив, отколкото у дома.
+- Trusted manpower solutions provider worldwide
+- Government-approved license for recruitment
+- Extensive network in diverse industries
+- Commitment to excellence and professionalism
+- Transforming lives through global opportunities
 
-Bulgaria Wants You е вдъхновяващо движение, което проправя пътя към едно по-свързано и проспериращо бъдеще за България. За нас постигането на целите ни е свързано с устойчивото развитие на организацията, което реализираме чрез изграждане на стабилни партньорства между бизнеса, публичния сектор и хората, за да помогнем на българите по света да преоткрият възможностите за живот и успешна кариера у нас. Вярваме, че всяко завръщане е крачка към една по-силна и жизнена родина.
+## Global Reach
 
-Моята роля в Bulgaria Wants You е да превърна визията в действие и въздействие – да изграждам стабилни основи, които подхранват растежа на организацията и я водят напред. Създавам работещи решения, оптимизирам процесите и насърчавам иновациите, за да може визията ни за бъдещето на България да оживее и да достигне до възможно най-много хора.
+ELW Group positions itself as "Your Global Partner" - a premier recruitment and manpower agency focused on delivering exceptional service across multiple continents, with particular expertise in placements to the Middle East, Europe, and beyond.
 
-Зареждам се от динамиката и предизвикателствата в продажбите, но истинската ми сила и страст е в изграждането на доверие и дългосрочни взаимоотношения, които превръщат клиентите в партньори.
+## Worker Specializations
 
-Над 25 години труд и творчество в сферата на медии, спортен мениджмънт и други интересности.
-
-Bulgaria Wants You е смисъл, удовлетворение, оптимизъм. Затворена еко система, където всеки от нас греши, учи се да бъде смел и да не се отказва, да расте от отдадеността на останалите. 
-
-А моята роля е да бъда вдъхновител. Ежедневно вдъхновявам хората да стават по-добри, по-знаещи и по-можещи. Част съм от отдела, където се случва магията. 
-
-В дните, в които си избирам да съм скучна, казвам, че съм редактор. Работата ми обаче далеч не може да се определи като скучна -  срещам се с изключителни хора, пиша сценарии, след това организирам снимачни дни и не на последно място монтирам целия разказ.
-
-Специалист с над 10 години опит в събитийната индустрия.
-
-Аз съм маркетинг професионалист с образование в Англия и САЩ и над 10 години опит с едни от най-разпознаваемите брандове в света. Основните принципи на работата ми са както стратегическият подход към ефективното развитие на всеки бранд, с който работя, така и структурирането на ефикасни оперативни процесии.
-Мотивационна фраза: “Whether you think you can or you can’t – you are right.” – Henry Ford
-
-С над 10 години опит в корпоративния sales&amp;event мениджмънт и диплома по Маркетинг, днес развивам ключови партньорства като Key Account Manager. Вярвам, че успехът идва от доверието, личния подход и умението да превръщаш предизвикателствата във възможности. Работя с енергия, усмивка и креативност, защото за мен добрите резултати вървят ръка за ръка с позитивната нагласа. Моето мото е: „Не се стресирай излишно – всичко е постижимо!“
-
-АЗ СЪМ
-
-Имам 4+ години опит в сферата на Employer Branding – в изграждането и развитието на работодателска марка, създаването на стратегии за компании, както и в организирането на събития, обучения и конференции. Като част от екипа на Bulgaria Wants You съм вдъхновена от възможността моят опит да допринесе както за компаниите, с които работим, така и за българите, които търсят развитие у нас и искат да открият своя път и перспектива за кариера в родината. Вярвам, че „Само този, който е достатъчно луд, за да мисли, че може да промени света, го променя.“
-
-Имам 6+ години опит в сферата на продажбите. Работила съм както с корпоративни клиенти, така и с крайни потребители, като съм се специализирала в изграждането на дългосрочни партньорства и постигането на устойчиви резултати. Отличавам се със силни комуникационни умения, позитивизъм, ориентация към клиента и способност за бързо адаптиране към динамична пазарна среда.
-Вярвам, че &quot;In a sad factory, you can&#039;t make beautiful toys&quot;, защото смятам, че именно добрата атмосфера и доверието в екипа са в основата на успеха.
-
-Bulgaria Wants You e част от живота ми, без която, на този етап, не мога. Платформата ежедневно ми дава смисъл, вяра и надежда, че с екипа вървим в правилата посока, променяйки средата около себе си към по-добра. 
-Аз съм част от двигателя, който движи проeкта. Ролята ми е свързана с това да разширявам семейството на Bulgaria Wants You с разнообразни компании и да им показвам друга гледна точка, различна от бизнес, а именно каузата и промяната, от която те могат да бъдат част.
-
-Занимавам се с организация на събития вече над 6 години и това е не просто професия, а нещо, което истински ме зарежда.
-Работила съм както по мащабни форуми и конференции в България, така и по събития в чужбина – всяко със своите предизвикателства и вълнения. Харесвам динамиката, възможността да свързвам хора и идеи, и най-вече момента, в който виждам как една добре измислена и подготвена концепция оживява на живо. За мен доброто събитие е това, което остава – като спомен, усещане и вдъхновение.
-
-ПР експерт с афинитет към социално-отговорните проекти.
-
-Специалист в графичния дизайн и видео монтажа с над 5 години опит.
-През това време съм работил с клиенти от цял свят по разнообразни проекти в сфери като спорт, разкрасителна индустрия, ентъртейнмънт и други. Вярвам в силата на визуалната комуникация и се стремя всяка моя работа да носи както естетика, така и ясно послание.
-
-Маркетинг експерт с повече от 5 години опит в дигиталния маркетинг, социалните мрежи и създаването на ангажиращо видео съдържание.
-Послание, което ме мотивира: “Това как се чувстваш, няма нищо общо с това на какво си способен.”
-
-Филолог по образование с опит в различни телевизионни формати.
-
-Аз съм специалист с над 5 години опит в заснемането и монтажа на видео материали. Обичам работата си в Bulgaria Wants You и влагам страст и желание във всеки от проектите ни.
-Моята работа се състои в това да представя на аудиторията на платформата своето виждане и да покажа чрез видеата, които създаваме с екипа, колко добри работодатели има в България и колко възможности за развитие дават те. Срещам се с талантливи, млади и креативни личности, които ме вдъхновяват.
-
-Bulgaria Wants You дава добавена стойност не само на мен, но и на бизнеса и потребителите.
-Като видеомонтажист и оператор с повече от 3 години опит, снимам и обработвам видеа и съхранявам правилно видеоматериали. Работата ми ми дава свобода да мисля различно, креативно, да изграждам сцени, а крайният резултат ми носи голямо удовлетворение. 
-Видеообработката и заснемането на интересни кадри винаги са били моята страст и в платформата имам възможност да я развивам.
+We recruit across multiple sectors including:
+- Construction
+- Healthcare
+- Hospitality
+- Culinary
+- Skilled trades
+- Technical positions
+- Oil & Gas
+- IT and Technology
+- Engineering
+- Executive and leadership roles
